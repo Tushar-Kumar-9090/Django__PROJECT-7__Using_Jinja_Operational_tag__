@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Here Data Comes From <span style="font-size: 40px; color:red;">Back-End</span> By Using <span style="font-size: 40px; color:blue;">render</span> Context Attribute</h1>
+        <h1>Here We Performing <span style="font-size: 40px; color:red;">Jinja Operation Tag</span></h1>
+
+
+
+
+    <!--if condition-->
+
+        <!-- {% if a > 20 %}
+            <h1>Inside If Condition</h1>
+            <h1>{{a}} is greater than 15</h1>
+        {% endif %} -->
+
+
+
+
+
+    <!--if-Else condition-->
+
+        <!-- {% if a > b %}
+            <h1>Inside If Condition</h1>
+            <h1>{{a}} is greater than {{b}}</h1>
+            <h1>a is greater than b</h1>
+        {% else %}
+            <h1>Inside Else Condition</h1>
+            <h1>{{b}} is greater than {{a}}</h1>
+            <h1>b is greater than a</h1>
+        {% endif %} -->
+
+
+
+
+
+
+    <!--if-Elif condition-->
+
+        <!-- {% if a > b and a > c and a > d%}
+            <h1>a is max</h1>
+        {% elif b > c and b > d%}
+            <h1>b is max</h1>
+        {% elif c > d%}
+            <h1>c is max</h1>
+        {% else %}
+            <h1>d is max</h1>
+        {% endif %}
+        -->
+
+
+
+
+
+    <!--Nested if condition-->
+
+    {% if a > b %}
+        {% if a > c %}
+            {% if a > d %}
+                <h1>a is max</h1>
+            {% else %}
+                <h1>d is max</h1>
+            {% endif %}
+        {% else %}
+            {% if c > d %}
+                <h1>c is max</h1>
+            {% else %}
+                <h1>d is max</h1>
+            {% endif %}
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            {% if b > d %}
+                <h1>b is max</h1>
+            {% else %}
+                <h1>d is max</h1>
+            {% endif %}
+        {% else %}
+            {% if c > d %}
+                <h1>c is max</h1>
+            {% else %}
+                <h1>d is max</h1>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+        
+
+
+
+
+
+
+
+
+
+    
+    </center>
+</body>
+</html>
